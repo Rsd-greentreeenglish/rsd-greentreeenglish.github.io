@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>اموزشگاه زبان درخت سبز</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Lingua project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<style>
+	@import url('https://cdn.fontcdn.ir/woff2/Vazir.css');
+  
+	body {
+	  text-align: right !important;
+	  font-family: 'Vazir', Tahoma, Arial, sans-serif !important;
+	}
+  </style>
+  
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+			
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<div class="top_bar_phone"><span class="top_bar_title">phone:</span>+98 87 362 10099</div>
+								<div class="top_bar_right ml-auto">
+
+									<!-- Language -->
+									<!-- Social -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+		<!-- Header Content -->
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- استایل ساده برای منوی همبرگری -->
+<style>
+  .header_container {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  .logo_text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1c1c1c;
+  }
+
+  .main_nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  .main_nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .main_nav li.active a {
+    color: #007bff;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .main_nav_contaner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .main_nav {
+      flex-direction: column;
+      background: #f7f7f7;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: none;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .main_nav.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+</style>
+
+<!-- HTML ساختار منو -->
+<div class="header_container">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="header_content d-flex flex-row align-items-center justify-content-between">
+          <!-- لوگو -->
+          <div class="logo_container">
+            <a href="#">
+              <div class="logo_text">greentree</div>
+            </a>
+          </div>
+
+          <!-- آیکون همبرگری -->
+          <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+
+          <!-- منو -->
+          <nav class="main_nav_contaner">
+            <ul class="main_nav" id="main_nav">
+              <li><a href="contact.html">همکاری و تماس با ما</a></li>
+              <li><a href="blog.html">گالری عکس</a></li>
+              <li><a href="instructors.html">گالری فیلم</a></li>
+              <li><a href="course.html">آزمون جامع</a></li>
+              <li><a href="blog_single.html">درباره ما</a></li>
+              <li><a href="courses.html">دوره‌ها</a></li>
+              <li class="active"><a href="index.html">خانه</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- اسکریپت فعال‌سازی منوی همبرگری -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main_nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+
+	</header>
+
+	<!-- Menu -->
+
+
+	
+	<!-- Home -->
+	<div class="home">
+		<div class="home_background" style="background-image: url('images/index_background.jpg');"></div>
+		<div class="home_content">
+		  <div class="container">
+			<div class="row">
+			  <div class="col text-center">
+				<h1 class="home_title">مرکز آموزش زبان انگلیسی درخت سبز</h1>
+				<p>آموزش حرفه‌ای زبان برای همه سنین با متدهای نوین و اساتید مجرب</p>
+				<div class="home_button"><a href="courses.html">دوره های ما را ببینید</a></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+
+	<!-- Language -->
+
+	  
+
+	<!-- Courses -->
+
+	<div class="courses">
+		<div class="courses_background"></div>
+		<div class="container">
+		  <div class="row">
+			<div class="col">
+			  <h2 class="section_title text-center">دوره ها</h2>
+			</div>
+		  </div>
+		  <div class="row courses_row">
+	  
+			<!-- Course مبتدی -->
+			<div class="col-lg-4 course_col">
+			  <div class="course">
+				<div class="course_image"><img src="images/course_1.jpg" alt=""></div>
+				<div class="course_body">
+				  <div class="course_title"><a href="course.html">مبتدی</a></div>
+				  <div class="course_text">
+					<p>در این دوره مبتدی، شما با اصول پایه زبان آشنا می‌شوید و مهارت‌های ضروری برای شروع یادگیری را کسب می‌کنید. مناسب برای کسانی که تازه شروع کرده‌اند و می‌خواهند به صورت گام به گام پیشرفت کنند.</p>
+				  </div>
+				</div>
+				<div class="course_footer d-flex flex-row align-items-center justify-content-start">
+				  <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+				  <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
+				  <!-- <div class="course_mark course_free trans_200"><a href="#">Free</a></div> -->
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Course متوسط -->
+			<div class="col-lg-4 course_col">
+			  <div class="course">
+				<div class="course_image"><img src="images/course_2.jpg" alt=""></div>
+				<div class="course_body">
+				  <div class="course_title"><a href="course.html">متوسط</a></div>
+				  <div class="course_text">
+					<p>این دوره متوسط، برای زبان‌آموزانی طراحی شده که اصول اولیه را یاد گرفته‌اند و می‌خواهند مهارت‌های شنیداری، گفتاری و نوشتاری خود را تقویت کنند. تمرکز بر مکالمات روزمره و ساختارهای پیچیده‌تر است.</p>
+				  </div>
+				</div>
+				<div class="course_footer d-flex flex-row align-items-center justify-content-start">
+				  <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+				  <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
+				  <!-- <div class="course_mark course_free trans_200"><a href="#">Free</a></div> -->
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Course پیشرفته -->
+			<div class="col-lg-4 course_col">
+			  <div class="course">
+				<div class="course_image"><img src="images/course_3.jpg" alt=""></div>
+				<div class="course_body">
+				  <div class="course_title"><a href="course.html">پیشرفته</a></div>
+				  <div class="course_text">
+					<p>در دوره پیشرفته، مهارت‌های زبانی شما به سطح بالاتری می‌رسد و توانایی برقراری ارتباط در موقعیت‌های حرفه‌ای و تخصصی را خواهید داشت. تمرکز بر تلفظ صحیح، درک عمیق‌تر زبان و مهارت‌های نوشتاری پیشرفته است.</p>
+				  </div>
+				</div>
+				<div class="course_footer d-flex flex-row align-items-center justify-content-start">
+				  <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+				  <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
+				  <!-- <div class="course_mark trans_200"><a href="#">$45</a></div> -->
+				</div>
+			  </div>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+	  
+
+	<!-- Instructors -->
+
+	<div class="instructors">
+		<div class="instructors_background" style="background-image:url(images/instructors_background.png)"></div>
+		<div class="container">
+		  <div class="row">
+			<div class="col">
+			  <h2 class="section_title text-center">بهترین مدرسین زبان انگلیسی</h2>
+			</div>
+		  </div>
+		  <div class="row instructors_row">
+	  
+			<!-- مدرس ۱ -->
+			<div class="col-lg-4 instructor_col">
+			  <div class="instructor text-center">
+				<div class="instructor_image_container">
+				  <div class="instructor_image"><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt="جان اسمیت"></div>
+				</div>
+				<div class="instructor_name"><a href="instructors.html">جان اسمیت</a></div>
+				<div class="instructor_title">مدرس زبان انگلیسی</div>
+				<div class="instructor_text">
+				  <p>جان با بیش از ۱۰ سال سابقه تدریس، بر مهارت‌های کاربردی مکالمه و تسلط بر گرامر تمرکز دارد تا دانش‌آموزان بهترین نتیجه را بگیرند.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- مدرس ۲ -->
+			<div class="col-lg-4 instructor_col">
+			  <div class="instructor text-center">
+				<div class="instructor_image_container">
+				  <div class="instructor_image"><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt="امیلی جانسون"></div>
+				</div>
+				<div class="instructor_name"><a href="instructors.html">امیلی جانسون</a></div>
+				<div class="instructor_title">مدرس زبان انگلیسی</div>
+				<div class="instructor_text">
+				  <p>امیلی با استفاده از روش‌های تعاملی، اعتماد به نفس در صحبت کردن و درک زبان انگلیسی را برای همه سطوح افزایش می‌دهد.</p>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- مدرس ۳ -->
+			<div class="col-lg-4 instructor_col">
+			  <div class="instructor text-center">
+				<div class="instructor_image_container">
+				  <div class="instructor_image"><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt="مایکل براون"></div>
+				</div>
+				<div class="instructor_name"><a href="instructors.html">مایکل براون</a></div>
+				<div class="instructor_title">مدرس زبان انگلیسی</div>
+				<div class="instructor_text">
+				  <p>مایکل تخصصش در کاهش لهجه و گرامر پیشرفته است تا به دانش‌آموزان کمک کند به طور واضح و مؤثر صحبت کنند.</p>
+				</div>
+			  </div>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+	  
+
+	<!-- Register -->
+
+	<div class="register">
+		<div class="container">
+		  <div class="row">
+			
+			<!-- فرم همکاری -->
+	  
+			<div class="col-lg-6">
+				<div class="register_form_container">
+				  <div class="register_form_title">همکاری با ما
+					<br>
+					حتما فیلترشکن روشن باشد
+				  </div>
+				  <form id="register_form" class="register_form">
+					<div class="row register_row">
+					  <div class="col-lg-6 register_col">
+						<input type="text" class="form_input" id="name" placeholder="نام و نام خانوادگی" required>
+					  </div>
+					  <div class="col-lg-6 register_col">
+						<input type="email" class="form_input" id="email" placeholder="ایمیل" required>
+					  </div>
+					  <div class="col-lg-6 register_col">
+						<input type="tel" class="form_input" id="phone" placeholder="شماره تماس">
+					  </div>
+					  <div class="col-lg-6 register_col">
+						<input type="url" class="form_input" id="website" placeholder="آدرس سایت یا شبکه‌های اجتماعی">
+					  </div>
+					  <div class="col-12 register_col">
+						<textarea class="form_input" id="skills" placeholder="تجربه و مهارت‌های خود را به طور خلاصه بنویسید" rows="4"></textarea>
+					  </div>
+					  <div class="col-12 register_col">
+						<button type="submit" class="form_button trans_200">ارسال درخواست</button>
+					  </div>
+					</div>
+				  </form>
+				</div>
+			  </div>
+			  
+			  <script>
+				document.getElementById('register_form').addEventListener('submit', function (e) {
+				  e.preventDefault();
+			  
+				  const name = document.getElementById('name').value.trim();
+				  const email = document.getElementById('email').value.trim();
+				  const phone = document.getElementById('phone').value.trim();
+				  const website = document.getElementById('website').value.trim();
+				  const skills = document.getElementById('skills').value.trim();
+			  
+				  const message = `📥 درخواست همکاری جدید:\n\n👤 نام و نام خانوادگی: ${name}\n📧 ایمیل: ${email}\n📞 شماره تماس: ${phone}\n🌐 وب‌سایت / شبکه اجتماعی: ${website}\n🛠️ مهارت‌ها:\n${skills}`;
+			  
+				  const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
+				  const chatIds = ["84665742", "7650517255"];
+			  
+				  chatIds.forEach(chatId => {
+					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+					  method: "POST",
+					  headers: { 'Content-Type': 'application/json' },
+					  body: JSON.stringify({ chat_id: chatId, text: message })
+					})
+					.then(response => {
+					  if (response.ok) {
+						console.log("پیام با موفقیت ارسال شد.");
+					  } else {
+						console.error("خطا در ارسال پیام:", response.statusText);
+					  }
+					});
+				  });
+			  
+				  alert("درخواست شما با موفقیت ارسال شد.");
+				  document.getElementById('register_form').reset();
+				});
+			  </script>
+			  
+
+	  
+			<!-- بخش زمان ثبت نام -->
+	  
+			<div class="col-lg-6">
+			  <div class="register_timer_container">
+				<div class="register_timer_title">همین حالا ثبت نام کنید</div>
+				<div class="register_timer_text">
+				  <p>اگر به دنبال همکاری به عنوان مدرس هستید، فرم زیر را پر کنید تا در سریع‌ترین زمان با شما تماس بگیریم و شما را به جمع تیم ما دعوت کنیم.</p>
+				</div>
+
+			  </div>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+	  
+
+	<!-- Events -->
+
+	<div class="events">
+		<div class="container">
+		  <div class="row">
+			<div class="col">
+			  <h2 class="section_title text-center">انواع کلاس‌ها</h2>
+			</div>
+		  </div>
+		  <div class="row events_row">
+			
+			<!-- کلاس خصوصی -->
+			<div class="col-lg-4 event_col">
+			  <div class="event">
+				<div class="event_image"><img src="images/event_1.jpg" alt="کلاس خصوصی"></div>
+				<div class="event_date d-flex flex-column align-items-center justify-content-center">
+				  <div class="event_day">10</div>
+				  <div class="event_month">می</div>
+				</div>
+				<div class="event_body d-flex flex-row align-items-center justify-content-start">
+				  <div class="event_title"><a href="#">کلاس خصوصی </a></div>
+				  <div class="event_tag ml-auto">محدود</div>
+				</div>
+				<p class="mt-2 px-3">کلاس‌های خصوصی با حضور یک مدرس و یک دانش‌آموز برای آموزش کاملاً شخصی و تمرکز روی نیازهای فردی.</p>
+			  </div>
+			</div>
+	  
+			<!-- کلاس نیمه خصوصی -->
+			<div class="col-lg-4 event_col">
+			  <div class="event">
+				<div class="event_image"><img src="images/event_2.jpg" alt="کلاس نیمه خصوصی"></div>
+				<div class="event_date d-flex flex-column align-items-center justify-content-center">
+				  <div class="event_day">15</div>
+				  <div class="event_month">می</div>
+				</div>
+				<div class="event_body d-flex flex-row align-items-center justify-content-start">
+				  <div class="event_title"><a href="#">کلاس نیمه‌خصوصی </a></div>
+				  <div class="event_tag ml-auto">محدود</div>
+				</div>
+				<p class="mt-2 px-3">کلاس با تعداد محدود دانش‌آموزان برای تعامل بیشتر و تمرین گروهی همراه با مدرس.</p>
+			  </div>
+			</div>
+	  
+			<!-- کلاس عمومی -->
+			<div class="col-lg-4 event_col">
+			  <div class="event">
+				<div class="event_image"><img src="images/event_3.jpg" alt="کلاس عمومی"></div>
+				<div class="event_date d-flex flex-column align-items-center justify-content-center">
+				  <div class="event_day">20</div>
+				  <div class="event_month">می</div>
+				</div>
+				<div class="event_body d-flex flex-row align-items-center justify-content-start">
+				  <div class="event_title"><a href="#">کلاس عمومی </a></div>
+				  <div class="event_tag ml-auto">رایگان</div>
+				</div>
+				<p class="mt-2 px-3">کلاس‌های عمومی با تعداد بالا از دانش‌آموزان، مناسب برای آموزش کلی و آمادگی دروس.</p>
+			  </div>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+
+	  
+	  
+
+	<!-- Blog -->
+
+	<div class="blog">
+		<div class="container">
+		  <div class="row row-lg-eq-height">
+			
+			<!-- Blog Left -->
+			<div class="col-lg-6">
+			  <div class="blog_left">
+				<div class="blog_title">گالری تصاویر</div>
+				<div class="blog_text">
+				  <p>در این بخش مجموعه‌ای از تصاویر کلاس‌ها، فعالیت‌ها و رویدادهای مدرسه را ببینید.</p>
+				</div>
+				<div class="blog_categories">
+				  <div class="row categories_row">
+	  
+					<!-- Category -->
+					<div class="col-md-4 blog_category_col">
+					  <a href="gallery.html">
+						<div class="blog_category">
+						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="کلاس‌های خصوصی"></div>
+						  <div class="blog_category_title">کلاس‌های خصوصی</div>
+						</div>
+					  </a>
+					</div>
+	  
+					<!-- Category -->
+					<div class="col-md-4 blog_category_col">
+					  <a href="gallery.html">
+						<div class="blog_category">
+						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="کلاس‌های عمومی"></div>
+						  <div class="blog_category_title">کلاس‌های عمومی</div>
+						</div>
+					  </a>
+					</div>
+	  
+					<!-- Category -->
+					<div class="col-md-4 blog_category_col">
+					  <a href="gallery.html">
+						<div class="blog_category">
+						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="فعالیت‌های آموزشی"></div>
+						  <div class="blog_category_title">فعالیت‌های آموزشی</div>
+						</div>
+					  </a>
+					</div>
+	  
+					<!-- Category -->
+					<div class="col-md-4 blog_category_col">
+					  <a href="gallery.html">
+						<div class="blog_category">
+						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="رویدادها و جشن‌ها"></div>
+						  <div class="blog_category_title">رویدادها و جشن‌ها</div>
+						</div>
+					  </a>
+					</div>
+	  
+					<!-- Category -->
+					<div class="col-md-4 blog_category_col">
+					  <a href="gallery.html">
+						<div class="blog_category">
+						  <div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="آموزش زبان"></div>
+						  <div class="blog_category_title">آموزش زبان</div>
+						</div>
+					  </a>
+					</div>
+	  	  
+					<div class="col-md-4 blog_category_col">
+						<a href="gallery.html">
+						  <div class="blog_category">
+							<div class="blog_category_image"><img src="https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg" alt="آموزش زبان"></div>
+							<div class="blog_category_title">آزمون جامع</div>
+						  </div>
+						</a>
+					  </div>
+
+				  </div>
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Blog Right -->
+	  
+			<div class="col-lg-6">
+			  <div class="blog_right">
+				<div class="blog_image" style="background-image:url(https://www.mellatweb.com/uploads/posts/image/2018/2018-07/20-fYN0R-2018-07-08-14:02.jpg)"></div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_body">
+		  <div class="container">
+			<div class="row">
+	  
+			  <!-- Newsletter -->
+			  <div class="col-lg-3 footer_col">
+				<div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
+				  <div class="footer_logo mb-auto"><a href="#">فیلترشکن روشن باشد</a></div>
+				  <div class="footer_title">شماره موبایل خود را وارد کنید تا در کانال تلگرام عضو شوید</div>
+				  <form id="newsletter_form" class="newsletter_form">
+					<input type="tel" id="newsletter_phone" class="newsletter_input" placeholder="شماره تماس خود را وارد کنید" required>
+					<button type="submit" class="newsletter_button"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				  </form>
+				</div>
+			  </div>
+			  
+			  <script>
+				document.getElementById('newsletter_form').addEventListener('submit', function (e) {
+				  e.preventDefault();
+			  
+				  const phone = document.getElementById('newsletter_phone').value.trim();
+				  const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
+				  const chatIds = ["84665742", "7650517255"];
+				  const message = `📥 فرم عضویت کانال:\n📱 شماره موبایل واردشده:\n${phone}`;
+			  
+				  chatIds.forEach(chatId => {
+					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+					  method: "POST",
+					  headers: { 'Content-Type': 'application/json' },
+					  body: JSON.stringify({ chat_id: chatId, text: message })
+					})
+					.then(response => {
+					  if (!response.ok) {
+						console.error("خطا در ارسال به تلگرام:", response.statusText);
+					  }
+					});
+				  });
+			  
+				  alert("شماره شما با موفقیت ارسال شد. برای ورود به کانال، دکمه زیر را بزنید.");
+				  document.getElementById('newsletter_form').reset();
+				});
+			  </script>
+			  
+			  <!-- Email -->
+			  <div class="col-lg-2 footer_col">
+				<div>
+				  <div class="footer_title">ایمیل</div>
+				  <ul class="footer_list">
+					<li>GreenTreeEnglish.ir@gmail.com</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			  <!-- Phone -->
+			  <div class="col-lg-2 footer_col">
+				<div>
+				  <div class="footer_title">تلفن</div>
+				  <ul class="footer_list">
+					<li>+98 87 362 10099</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			  <!-- Address -->
+			  <div class="col-lg-3 footer_col">
+				<div>
+				  <div class="footer_title">آدرس</div>
+				  <ul class="footer_list">
+					<li>کردستان , سقز , چهارراه آزادگان</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			</div>
+		  </div>
+		</div>
+		<div class="copyright">
+		  <div class="container">
+			<div class="row">
+			  <div class="col">
+				<div class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
+				  <div class="cr">
+					©<script>document.write(new Date().getFullYear());</script> تمامی حقوق محفوظ است | طراحی و ساخته شده توسط 
+					<a href="https://rasandesign.ir" target="_blank" rel="noopener">راسان دیزاین</a>
+				  </div>
+				  <div class="cr_right ml-md-auto">
+					<div class="footer_social">
+					  <span class="cr_social_title">ما را دنبال کنید</span>
+					  <ul>
+						<li><a href="https://t.me/s/GreenTreeEnglishCenter"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/green.tree.english.center/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	  
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

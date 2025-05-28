@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Courses</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Lingua project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/courses.css">
+<link rel="stylesheet" type="text/css" href="styles/courses_responsive.css">
+<style>
+	@import url('https://cdn.fontcdn.ir/woff2/Vazir.css');
+  
+	body {
+	  text-align: right !important;
+	  font-family: 'Vazir', Tahoma, Arial, sans-serif !important;
+	}
+  </style>
+  
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+
+	<header class="header">
+			
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<div class="top_bar_phone"><span class="top_bar_title">phone:</span>+98 87 362 10099</div>
+								<div class="top_bar_right ml-auto">
+
+									<!-- Language -->
+									<!-- Social -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+		<!-- Header Content -->
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- استایل ساده برای منوی همبرگری -->
+<style>
+  .header_container {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  .logo_text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1c1c1c;
+  }
+
+  .main_nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  .main_nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .main_nav li.active a {
+    color: #007bff;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .main_nav_contaner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .main_nav {
+      flex-direction: column;
+      background: #f7f7f7;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: none;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .main_nav.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+</style>
+
+<!-- HTML ساختار منو -->
+<div class="header_container">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="header_content d-flex flex-row align-items-center justify-content-between">
+          <!-- لوگو -->
+          <div class="logo_container">
+            <a href="#">
+              <div class="logo_text">greentree</div>
+            </a>
+          </div>
+
+          <!-- آیکون همبرگری -->
+          <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+
+          <!-- منو -->
+          <nav class="main_nav_contaner">
+            <ul class="main_nav" id="main_nav">
+              <li><a href="contact.html">همکاری و تماس با ما</a></li>
+              <li><a href="blog.html">گالری عکس</a></li>
+              <li><a href="instructors.html">گالری فیلم</a></li>
+              <li><a href="course.html">آزمون جامع</a></li>
+              <li><a href="blog_single.html">درباره ما</a></li>
+              <li><a href="courses.html">دوره‌ها</a></li>
+              <li class="active"><a href="index.html">خانه</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- اسکریپت فعال‌سازی منوی همبرگری -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main_nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+
+	</header>
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<div class="search">
+			<form action="#" class="header_search_form menu_mm">
+				<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+				<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+					<i class="fa fa-search menu_mm" aria-hidden="true"></i>
+				</button>
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="menu_mm"><a href="index.html">Home</a></li>
+				<li class="menu_mm"><a href="courses.html">Courses</a></li>
+				<li class="menu_mm"><a href="instructors.html">Instructors</a></li>
+				<li class="menu_mm"><a href="#">Events</a></li>
+				<li class="menu_mm"><a href="blog.html">Blog</a></li>
+				<li class="menu_mm"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="menu_extra">
+			<div class="menu_phone"><span class="menu_title">phone:</span>+44 300 303 0266</div>
+			<div class="menu_social">
+				<span class="menu_title">follow us</span>
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="breadcrumbs_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Language -->
+
+	<div class="language">
+		<div class="container">
+		  <div class="row">
+			<div class="col">
+			  <div class="language_slider_container">
+	  
+				<!-- Language Slider -->
+	  
+				<div class="owl-carousel owl-theme language_slider">
+	  
+				  <!-- <div class="owl-item language_item">
+					<a href="#">
+					  <div class="flag"><span>120</span></div>
+					  <div class="lang_name">تعداد دانش‌آموزان</div>
+					</a>
+				  </div>
+	  
+				  <div class="owl-item language_item">
+					<a href="#">
+					  <div class="flag"><span>95</span></div>
+					  <div class="lang_name">تعداد دانش‌آموزان</div>
+					</a>
+				  </div>
+
+				  <div class="owl-item language_item">
+					<a href="#">
+					  <div class="flag"><span>80</span></div>
+					  <div class="lang_name">تعداد دانش‌آموزان</div>
+					</a>
+				  </div>
+	  
+				  <div class="owl-item language_item">
+					<a href="#">
+					  <div class="flag"><span>60</span></div>
+					  <div class="lang_name">تعداد دانش‌آموزان</div>
+					</a>
+				  </div> -->
+	  
+				  <!-- Item -->
+
+				</div>
+	  
+				<!-- <div class="lang_nav lang_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+				<div class="lang_nav lang_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div> -->
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<!-- Courses -->
+
+	<div class="courses">
+		<div class="courses_background"></div>
+		<div class="container">
+		  <div class="row">
+			<div class="col">
+			  <h2 class="section_title text-center">دوره ها</h2>
+			</div>
+		  </div>
+		  <div class="row courses_row">
+	  
+			<!-- Course مبتدی -->
+			<div class="col-lg-4 course_col">
+			  <div class="course">
+				<div class="course_image"><img src="images/course_1.jpg" alt=""></div>
+				<div class="course_body">
+				  <div class="course_title"><a href="course.html">مبتدی</a></div>
+				  <div class="course_info">
+					<ul>
+					  <!-- <li><a href="instructors.html">Sarah Parker</a></li>
+					  <li><a href="#">English</a></li> -->
+					</ul>
+				  </div>
+				  <div class="course_text">
+					<p>در این دوره مبتدی، شما با اصول پایه زبان آشنا می‌شوید و مهارت‌های ضروری برای شروع یادگیری را کسب می‌کنید. مناسب برای کسانی که تازه شروع کرده‌اند و می‌خواهند به صورت گام به گام پیشرفت کنند.</p>
+				  </div>
+				</div>
+				<div class="course_footer d-flex flex-row align-items-center justify-content-start">
+				  <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+				  <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
+				  <!-- <div class="course_mark course_free trans_200"><a href="#">Free</a></div> -->
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Course متوسط -->
+			<div class="col-lg-4 course_col">
+			  <div class="course">
+				<div class="course_image"><img src="images/course_2.jpg" alt=""></div>
+				<div class="course_body">
+				  <div class="course_title"><a href="course.html">متوسط</a></div>
+				  <div class="course_info">
+					<ul>
+					  <!-- <li><a href="instructors.html">Sarah Parker</a></li>
+					  <li><a href="#">Spanish</a></li> -->
+					</ul>
+				  </div>
+				  <div class="course_text">
+					<p>این دوره متوسط، برای زبان‌آموزانی طراحی شده که اصول اولیه را یاد گرفته‌اند و می‌خواهند مهارت‌های شنیداری، گفتاری و نوشتاری خود را تقویت کنند. تمرکز بر مکالمات روزمره و ساختارهای پیچیده‌تر است.</p>
+				  </div>
+				</div>
+				<div class="course_footer d-flex flex-row align-items-center justify-content-start">
+				  <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+				  <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
+				  <!-- <div class="course_mark course_free trans_200"><a href="#">Free</a></div> -->
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Course پیشرفته -->
+			<div class="col-lg-4 course_col">
+			  <div class="course">
+				<div class="course_image"><img src="images/course_3.jpg" alt=""></div>
+				<div class="course_body">
+				  <div class="course_title"><a href="course.html">پیشرفته</a></div>
+				  <div class="course_info">
+					<ul>
+					  <!-- <li><a href="instructors.html">Sarah Parker</a></li>
+					  <li><a href="#">English</a></li> -->
+					</ul>
+				  </div>
+				  <div class="course_text">
+					<p>در دوره پیشرفته، مهارت‌های زبانی شما به سطح بالاتری می‌رسد و توانایی برقراری ارتباط در موقعیت‌های حرفه‌ای و تخصصی را خواهید داشت. تمرکز بر تلفظ صحیح، درک عمیق‌تر زبان و مهارت‌های نوشتاری پیشرفته است.</p>
+				  </div>
+				</div>
+				<div class="course_footer d-flex flex-row align-items-center justify-content-start">
+				  <div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+				  <div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
+				  <!-- <div class="course_mark trans_200"><a href="#">$45</a></div> -->
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-lg-4 course_col">
+				<div class="course">
+				  <div class="course_image"><img src="images/event_3.jpg" alt=""></div>
+				  <div class="course_body">
+					<div class="course_title"><a href="course.html">عمومی</a></div>
+					<div class="course_info">
+					  <ul>
+						<!-- <li><a href="instructors.html">Sarah Parker</a></li>
+						<li><a href="#">English</a></li> -->
+					  </ul>
+					</div>
+					<div class="course_text">
+						<p>کلاس‌های عمومی با تعداد بالا از دانش‌آموزان، مناسب برای آموزش کلی و آمادگی دروس.</p>
+					</div>
+				  </div>
+				  <div class="course_footer d-flex flex-row align-items-center justify-content-start">
+					<div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+					<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
+					<!-- <div class="course_mark course_free trans_200"><a href="#">Free</a></div> -->
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-lg-4 course_col">
+				<div class="course">
+				  <div class="course_image"><img src="images/event_1.jpg" alt=""></div>
+				  <div class="course_body">
+					<div class="course_title"><a href="course.html">خصوصی</a></div>
+					<div class="course_info">
+					  <ul>
+						<!-- <li><a href="instructors.html">Sarah Parker</a></li>
+						<li><a href="#">English</a></li> -->
+					  </ul>
+					</div>
+					<div class="course_text">
+					  <p>کلاس‌های خصوصی با حضور یک مدرس و یک دانش‌آموز برای آموزش کاملاً شخصی و تمرکز روی نیازهای فردی.</p>
+					</div>
+				  </div>
+				  <div class="course_footer d-flex flex-row align-items-center justify-content-start">
+					<div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+					<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
+					<!-- <div class="course_mark course_free trans_200"><a href="#">Free</a></div> -->
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="col-lg-4 course_col">
+				<div class="course">
+				  <div class="course_image"><img src="images/event_2.jpg" alt=""></div>
+				  <div class="course_body">
+					<div class="course_title"><a href="course.html">نیمه خصوصی</a></div>
+					<div class="course_info">
+					  <ul>
+						<!-- <li><a href="instructors.html">Sarah Parker</a></li>
+						<li><a href="#">English</a></li> -->
+					  </ul>
+					</div>
+					<div class="course_text">
+						<p>کلاس با تعداد محدود دانش‌آموزان برای تعامل بیشتر و تمرین گروهی همراه با مدرس.</p>
+					</div>
+				  </div>
+				  <div class="course_footer d-flex flex-row align-items-center justify-content-start">
+					<div class="course_students"><i class="fa fa-user" aria-hidden="true"></i><span>10</span></div>
+					<div class="course_rating ml-auto"><i class="fa fa-star" aria-hidden="true"></i><span>5</span></div>
+					<!-- <div class="course_mark course_free trans_200"><a href="#">Free</a></div> -->
+				  </div>
+				</div>
+			  </div>
+
+		  </div>
+		</div>
+	  </div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_body">
+		  <div class="container">
+			<div class="row">
+	  
+			  <!-- Newsletter -->
+			  <div class="col-lg-3 footer_col">
+				<div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
+				  <div class="footer_logo mb-auto"><a href="#">فیلترشکن روشن باشد</a></div>
+				  <div class="footer_title">شماره موبایل خود را وارد کنید تا در کانال تلگرام عضو شوید</div>
+				  <form id="newsletter_form" class="newsletter_form">
+					<input type="tel" id="newsletter_phone" class="newsletter_input" placeholder="شماره تماس خود را وارد کنید" required>
+					<button type="submit" class="newsletter_button"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				  </form>
+				</div>
+			  </div>
+			  
+			  <script>
+				document.getElementById('newsletter_form').addEventListener('submit', function (e) {
+				  e.preventDefault();
+			  
+				  const phone = document.getElementById('newsletter_phone').value.trim();
+				  const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
+				  const chatIds = ["84665742", "7650517255"];
+				  const message = `📥 فرم عضویت کانال:\n📱 شماره موبایل واردشده:\n${phone}`;
+			  
+				  chatIds.forEach(chatId => {
+					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+					  method: "POST",
+					  headers: { 'Content-Type': 'application/json' },
+					  body: JSON.stringify({ chat_id: chatId, text: message })
+					})
+					.then(response => {
+					  if (!response.ok) {
+						console.error("خطا در ارسال به تلگرام:", response.statusText);
+					  }
+					});
+				  });
+			  
+				  alert("شماره شما با موفقیت ارسال شد. برای ورود به کانال، دکمه زیر را بزنید.");
+				  document.getElementById('newsletter_form').reset();
+				});
+			  </script>
+			  
+			  <!-- Email -->
+			  <div class="col-lg-2 footer_col">
+				<div>
+				  <div class="footer_title">ایمیل</div>
+				  <ul class="footer_list">
+					<li>GreenTreeEnglish.ir@gmail.com</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			  <!-- Phone -->
+			  <div class="col-lg-2 footer_col">
+				<div>
+				  <div class="footer_title">تلفن</div>
+				  <ul class="footer_list">
+					<li>+98 87 362 10099</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			  <!-- Address -->
+			  <div class="col-lg-3 footer_col">
+				<div>
+				  <div class="footer_title">آدرس</div>
+				  <ul class="footer_list">
+					<li>کردستان , سقز , چهارراه آزادگان</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			</div>
+		  </div>
+		</div>
+		<div class="copyright">
+		  <div class="container">
+			<div class="row">
+			  <div class="col">
+				<div class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
+				  <div class="cr">
+					©<script>document.write(new Date().getFullYear());</script> تمامی حقوق محفوظ است | طراحی و ساخته شده توسط 
+					<a href="https://rasandesign.ir" target="_blank" rel="noopener">راسان دیزاین</a>
+				  </div>
+				  <div class="cr_right ml-md-auto">
+					<div class="footer_social">
+					  <span class="cr_social_title">ما را دنبال کنید</span>
+					  <ul>
+						<li><a href="https://t.me/s/GreenTreeEnglishCenter"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/green.tree.english.center/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/courses.js"></script>
+</body>
+</html>

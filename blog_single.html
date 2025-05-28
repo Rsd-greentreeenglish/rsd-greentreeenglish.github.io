@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blog Single</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Lingua project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/blog_single.css">
+<link rel="stylesheet" type="text/css" href="styles/blog_single_responsive.css">
+<style>
+	@import url('https://cdn.fontcdn.ir/woff2/Vazir.css');
+  
+	body {
+	  text-align: right !important;
+	  font-family: 'Vazir', Tahoma, Arial, sans-serif !important;
+	}
+  </style>
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+
+	<header class="header">
+			
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<div class="top_bar_phone"><span class="top_bar_title">phone:</span>+98 87 362 10099</div>
+								<div class="top_bar_right ml-auto">
+
+									<!-- Language -->
+									<!-- Social -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+		<!-- Header Content -->
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- استایل ساده برای منوی همبرگری -->
+<style>
+  .header_container {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  .logo_text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1c1c1c;
+  }
+
+  .main_nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  .main_nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .main_nav li.active a {
+    color: #007bff;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .main_nav_contaner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .main_nav {
+      flex-direction: column;
+      background: #f7f7f7;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: none;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .main_nav.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+</style>
+
+<!-- HTML ساختار منو -->
+<div class="header_container">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="header_content d-flex flex-row align-items-center justify-content-between">
+          <!-- لوگو -->
+          <div class="logo_container">
+            <a href="#">
+              <div class="logo_text">greentree</div>
+            </a>
+          </div>
+
+          <!-- آیکون همبرگری -->
+          <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+
+          <!-- منو -->
+          <nav class="main_nav_contaner">
+            <ul class="main_nav" id="main_nav">
+              <li><a href="contact.html">همکاری و تماس با ما</a></li>
+              <li><a href="blog.html">گالری عکس</a></li>
+              <li><a href="instructors.html">گالری فیلم</a></li>
+              <li><a href="course.html">آزمون جامع</a></li>
+              <li><a href="blog_single.html">درباره ما</a></li>
+              <li><a href="courses.html">دوره‌ها</a></li>
+              <li class="active"><a href="index.html">خانه</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- اسکریپت فعال‌سازی منوی همبرگری -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main_nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+
+	</header>
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<div class="search">
+			<form action="#" class="header_search_form menu_mm">
+				<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+				<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+					<i class="fa fa-search menu_mm" aria-hidden="true"></i>
+				</button>
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="menu_mm"><a href="index.html">Home</a></li>
+				<li class="menu_mm"><a href="courses.html">Courses</a></li>
+				<li class="menu_mm"><a href="instructors.html">Instructors</a></li>
+				<li class="menu_mm"><a href="#">Events</a></li>
+				<li class="menu_mm"><a href="blog.html">Blog</a></li>
+				<li class="menu_mm"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="menu_extra">
+			<div class="menu_phone"><span class="menu_title">phone:</span>+44 300 303 0266</div>
+			<div class="menu_social">
+				<span class="menu_title">follow us</span>
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="breadcrumbs_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<ul class="breadcrumbs_list d-flex flex-row align-items-center justify-content-start">
+							<li><a href="index.html">home</a></li>
+							<li><a href="blog.html">blog</a></li>
+							<li><a href="blog.html">travel</a></li>
+							<li>falmin' hot indulgence</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Blog Image -->
+<br><br><br><br><br>
+
+	<!-- Blog Content -->
+
+	<div class="blog_container">
+		<div class="container">
+			<div class="row blog_content_row">
+				<div class="col">
+					<div class="blog_content">
+						<div class="blog_post_title_container">
+							<div class="blog_category"><a href="#">ما کی هستیم؟</a></div>
+							<div class="blog_title">درباره ما</div>
+						</div>
+						<div class="blog_text">
+							<p>آموزشگاه ما با افتخار، به عنوان <strong>اولین و بزرگ‌ترین مرکز آموزش تخصصی در سقز</strong>، از سال <strong>۱۳۹۰</strong> فعالیت خود را آغاز کرده و در طول این سال‌ها توانسته است جایگاه ویژه‌ای در قلب مردم عزیز شهر سقز پیدا کند. از همان ابتدا هدف ما این بوده که نه‌تنها یک مرکز آموزش، بلکه یک پایگاه رشد، خلاقیت و موفقیت برای جوانان و علاقمندان به یادگیری در <strong>سقز</strong> باشیم.</p>
+	
+							<p>در زمانی که آموزش‌های کاربردی در سقز کمتر در دسترس بود، ما با تلاش بی‌وقفه و با همکاری اساتید مجرب و دلسوز، مسیر تازه‌ای در آموزش باز کردیم. آموزشگاه ما با تمرکز بر کیفیت، نوآوری و تخصص، توانسته است بیش از یک دهه در کنار مردم باوفای سقز بماند و همواره به عنوان نماد اعتماد، کیفیت و موفقیت در این شهر شناخته شود.</p>
+	
+							<p>ما در سقز متعهد به ایجاد تحول در آموزش بوده‌ایم. در طی این سال‌ها، صدها دوره تخصصی در زمینه‌های مختلف از جمله زبان‌های خارجی، مهارت‌های کامپیوتری، برنامه‌نویسی، طراحی گرافیک، حسابداری، مهارت‌های ارتباطی و بسیاری موارد دیگر برگزار کرده‌ایم. امروز، افتخار می‌کنیم که هزاران نفر از جوانان سقزی مسیر آینده‌ی خود را از همین آموزشگاه آغاز کرده‌اند.</p>
+	
+							<blockquote class="blog_quote">
+								<strong>سقز</strong> شهری است با استعدادهای بی‌شمار؛ ما اینجا هستیم تا این استعدادها را شکوفا کنیم.
+							</blockquote>
+	
+							<p>تجهیزات مدرن، فضای آموزشی مناسب، برنامه‌ریزی دقیق، و احترام به وقت و نیاز دانش‌پذیران سقز از مهم‌ترین اصول کاری ماست. در کنار آموزش حضوری، از سال‌های اخیر آموزش‌های آنلاین را نیز به خدمات خود اضافه کرده‌ایم تا امکان یادگیری برای تمام شهروندان سقز در هر شرایطی فراهم باشد.</p>
+	
+							<p>ما باور داریم که آموزش باید فراتر از کتاب‌ها و جزوه‌ها باشد. آموزش یعنی ساختن مسیر زندگی، یعنی شکل دادن به آینده. و این باور را در عمل به اجرا درآورده‌ایم. با رویکردی کاملاً نوین، محیطی فراهم کرده‌ایم که در آن یادگیری لذت‌بخش، هدفمند و مؤثر باشد. سقز لیاقت بهترین‌ها را دارد و ما خود را موظف می‌دانیم که بهترین را برای مردم این شهر فراهم کنیم.</p>
+	
+							<p>آموزشگاه ما با برگزاری رویدادهای فرهنگی، کارگاه‌های تخصصی، مسابقات علمی، و دوره‌های کارآفرینی، همواره تلاش کرده تا نقشی فراتر از یک مؤسسه آموزشی داشته باشد. ما یک خانواده‌ایم؛ خانواده‌ای از جوانان با انگیزه و استادانی دلسوز که همه با هدف توسعه پایدار <strong>سقز</strong> دور هم جمع شده‌ایم.</p>
+	
+							<figure class="blog_post_image">
+								<img src="https://www.euroschoolindia.com/blogs/wp-content/uploads/2024/01/importance-of-learning-english-jpg.webp" alt="آموزش در سقز">
+								<figcaption>آموزشگاه ما، نقطه آغاز پیشرفت در سقز</figcaption>
+							</figure>
+	
+							<p>ما در سقز باقی خواهیم ماند. با قدرت، با انگیزه، و با عشق. چون این شهر، شهر ماست. سقز شهری است که در آن قلب‌ها برای پیشرفت می‌تپد. سقز جایی است که استعدادها منتظر شکوفایی هستند و ما این فرصت را فراهم می‌کنیم. آینده سقز را فرزندان همین شهر می‌سازند، و ما افتخار می‌کنیم که بخشی از این آینده هستیم.</p>
+	
+							<p>اگر شما هم در سقز زندگی می‌کنید یا به دنبال آموزش باکیفیت در فضایی پویا و حرفه‌ای هستید، ما اینجاییم. از سال ۱۳۹۰ تا امروز، ما برای شما بوده‌ایم و خواهیم بود. <strong>آموزشگاه شماره یک سقز</strong>، انتخاب اول کسانی که می‌خواهند متفاوت باشند.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+
+
+			<div class="row comments">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="comments_title">نظر دانش‌آموزان <span>(3)</span></div>
+					<div class="comments_container">
+						<ul class="comments_list">
+							<li class="comment">
+								<div class="comment_content">
+									<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+										<div class="comment_image"><div><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt=""></div></div>
+										<div class="comment_info">
+											<div class="comment_name"><a href="#">راسان سلطانی</a></div>
+											<div class="comment_time">اردیبهشت ۱۴۰۴</div>
+										</div>
+									</div>
+									<div class="comment_text">
+										<p>من از سال ۱۳۹۸ در این آموزشگاه شرکت می‌کنم و واقعاً از کیفیت آموزش و برخورد اساتید راضی‌ام. محیط صمیمی و حرفه‌ای باعث شده همیشه انگیزه داشته باشم.</p>
+									</div>
+								</div>
+							</li>
+			
+							<li class="comment">
+								<div class="comment_content">
+									<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+										<div class="comment_image"><div><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt=""></div></div>
+										<div class="comment_info">
+											<div class="comment_name"><a href="#">محمد کریمی</a></div>
+											<div class="comment_time">فروردین ۱۴۰۴</div>
+										</div>
+									</div>
+									<div class="comment_text">
+										<p>به نظرم اینجا بهترین آموزشگاه سقزه. هم امکانات خوبی داره و هم آموزش‌ها خیلی کاربردی هستن. با کمک همین آموزشگاه تونستم وارد بازار کار بشم.</p>
+									</div>
+								</div>
+							</li>
+			
+							<li class="comment">
+								<div class="comment_content">
+									<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+										<div class="comment_image"><div><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt=""></div></div>
+										<div class="comment_info">
+											<div class="comment_name"><a href="#">آران فاتمیان</a></div>
+											<div class="comment_time">اسفند ۱۴۰۳</div>
+										</div>
+									</div>
+									<div class="comment_text">
+										<p>همیشه دنبال جایی بودم که آموزش جدی بگیرن. این آموزشگاه دقیقاً همون جاییه که دنبالش بودم. من تونستم مهارت‌هامو به طرز چشم‌گیری بالا ببرم.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_body">
+		  <div class="container">
+			<div class="row">
+	  
+			  <!-- Newsletter -->
+			  <div class="col-lg-3 footer_col">
+				<div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
+				  <div class="footer_logo mb-auto"><a href="#">فیلترشکن روشن باشد</a></div>
+				  <div class="footer_title">شماره موبایل خود را وارد کنید تا در کانال تلگرام عضو شوید</div>
+				  <form id="newsletter_form" class="newsletter_form">
+					<input type="tel" id="newsletter_phone" class="newsletter_input" placeholder="شماره تماس خود را وارد کنید" required>
+					<button type="submit" class="newsletter_button"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				  </form>
+				</div>
+			  </div>
+			  
+			  <script>
+				document.getElementById('newsletter_form').addEventListener('submit', function (e) {
+				  e.preventDefault();
+			  
+				  const phone = document.getElementById('newsletter_phone').value.trim();
+				  const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
+				  const chatIds = ["84665742", "7650517255"];
+				  const message = `📥 فرم عضویت کانال:\n📱 شماره موبایل واردشده:\n${phone}`;
+			  
+				  chatIds.forEach(chatId => {
+					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+					  method: "POST",
+					  headers: { 'Content-Type': 'application/json' },
+					  body: JSON.stringify({ chat_id: chatId, text: message })
+					})
+					.then(response => {
+					  if (!response.ok) {
+						console.error("خطا در ارسال به تلگرام:", response.statusText);
+					  }
+					});
+				  });
+			  
+				  alert("شماره شما با موفقیت ارسال شد. برای ورود به کانال، دکمه زیر را بزنید.");
+				  document.getElementById('newsletter_form').reset();
+				});
+			  </script>
+			  
+			  <!-- Email -->
+			  <div class="col-lg-2 footer_col">
+				<div>
+				  <div class="footer_title">ایمیل</div>
+				  <ul class="footer_list">
+					<li>GreenTreeEnglish.ir@gmail.com</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			  <!-- Phone -->
+			  <div class="col-lg-2 footer_col">
+				<div>
+				  <div class="footer_title">تلفن</div>
+				  <ul class="footer_list">
+					<li>+98 87 362 10099</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			  <!-- Address -->
+			  <div class="col-lg-3 footer_col">
+				<div>
+				  <div class="footer_title">آدرس</div>
+				  <ul class="footer_list">
+					<li>کردستان , سقز , چهارراه آزادگان</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			</div>
+		  </div>
+		</div>
+		<div class="copyright">
+		  <div class="container">
+			<div class="row">
+			  <div class="col">
+				<div class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
+				  <div class="cr">
+					©<script>document.write(new Date().getFullYear());</script> تمامی حقوق محفوظ است | طراحی و ساخته شده توسط 
+					<a href="https://rasandesign.ir" target="_blank" rel="noopener">راسان دیزاین</a>
+				  </div>
+				  <div class="cr_right ml-md-auto">
+					<div class="footer_social">
+					  <span class="cr_social_title">ما را دنبال کنید</span>
+					  <ul>
+						<li><a href="https://t.me/s/GreenTreeEnglishCenter"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/green.tree.english.center/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/blog_single.js"></script>
+</body>
+</html>

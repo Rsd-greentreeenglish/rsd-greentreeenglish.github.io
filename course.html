@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Course</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Lingua project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/course.css">
+<link rel="stylesheet" type="text/css" href="styles/course_responsive.css">
+<style>
+	@import url('https://cdn.fontcdn.ir/woff2/Vazir.css');
+  
+	body {
+	  text-align: right !important;
+	  font-family: 'Vazir', Tahoma, Arial, sans-serif !important;
+	}
+  </style>
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+			
+		<!-- Top Bar -->
+		<div class="top_bar">
+			<div class="top_bar_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+								<div class="top_bar_phone"><span class="top_bar_title">phone:</span>+98 87 362 10099</div>
+								<div class="top_bar_right ml-auto">
+
+									<!-- Language -->
+									<!-- Social -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+		<!-- Header Content -->
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- استایل ساده برای منوی همبرگری -->
+<style>
+  .header_container {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  .logo_text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1c1c1c;
+  }
+
+  .main_nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  .main_nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .main_nav li.active a {
+    color: #007bff;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .main_nav_contaner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .main_nav {
+      flex-direction: column;
+      background: #f7f7f7;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: none;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .main_nav.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+</style>
+
+<!-- HTML ساختار منو -->
+<div class="header_container">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="header_content d-flex flex-row align-items-center justify-content-between">
+          <!-- لوگو -->
+          <div class="logo_container">
+            <a href="#">
+              <div class="logo_text">greentree</div>
+            </a>
+          </div>
+
+          <!-- آیکون همبرگری -->
+          <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+
+          <!-- منو -->
+          <nav class="main_nav_contaner">
+            <ul class="main_nav" id="main_nav">
+              <li><a href="contact.html">همکاری و تماس با ما</a></li>
+              <li><a href="blog.html">گالری عکس</a></li>
+              <li><a href="instructors.html">گالری فیلم</a></li>
+              <li><a href="course.html">آزمون جامع</a></li>
+              <li><a href="blog_single.html">درباره ما</a></li>
+              <li><a href="courses.html">دوره‌ها</a></li>
+              <li class="active"><a href="index.html">خانه</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- اسکریپت فعال‌سازی منوی همبرگری -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main_nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+
+	</header>
+
+	<!-- Menu -->
+
+
+	
+	<!-- Home -->
+
+
+	<!-- Intro -->
+
+	<div class="intro">
+		<div class="intro_background parallax-window" style="background-color: #007bff;"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="intro_container d-flex flex-column align-items-start justify-content-end">
+						<div class="intro_content">
+							<div class="intro_price">اولین</div>
+							<div class="rating_r rating_r_4 intro_rating"><i></i><i></i><i></i><i></i><i></i></div>
+							<div class="intro_title">آزمون جامع شهر سقز</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<!-- Course -->
+
+	<div class="course">
+		<div class="course_top"></div>
+		<div class="container">
+			<div class="row row-lg-eq-height">
+
+				<!-- Panels -->
+				<div class="col-lg-9">
+					<div class="tab_panels">
+
+						<!-- Tabs -->
+						<div class="course_tabs_container">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-9">
+										<div class="tabs d-flex flex-row align-items-center justify-content-start">
+											<div class="tab active">description</div>
+										</div>
+									</div>
+								</div>
+							</div>		
+						</div>
+
+						<!-- Description -->
+						<div class="tab_panel description active">
+							<div class="panel_title">About this course</div>
+							<div class="panel_text">
+								<p>
+								آزمون جامع زبان آموزشگاه درخت سبز، نخستین و برترین آزمون تخصصی ارزیابی زبان در شهر سقز است که از سال ۱۳۹۰ به‌صورت حرفه‌ای برگزار می‌شود.<br>
+								این آزمون سالانه یک‌بار برگزار شده و ویژه‌ی زبان‌آموزانی از سطح ۱ تا سطح ۵ طراحی شده است.<br>
+								هدف از برگزاری این آزمون، سنجش دقیق مهارت‌های زبانی شامل مهارت‌های چهارگانه (شنیداری، گفتاری، نوشتاری و درک مطلب) براساس استانداردهای بین‌المللی است.<br>
+								آزمون جامع زبان فرصتی است برای زبان‌آموزان تا با ارزیابی سطح واقعی خود، مسیر یادگیری مؤثرتری را انتخاب کنند.<br>
+								آموزشگاه درخت سبز با سابقه‌ای درخشان در زمینه آموزش زبان‌های خارجی و بهره‌گیری از اساتید مجرب، از پیشگامان آموزش تخصصی زبان در منطقه است و آزمون جامع یکی از افتخارات و دستاوردهای این مجموعه به‌شمار می‌رود.
+								</p>
+							</div>
+							
+							<!-- Instructors -->
+							<!-- <div class="instructors">
+								<div class="panel_title">All instructors</div>
+								<div class="row instructors_row">
+
+								
+									<div class="col-lg-4 col-md-6">
+										<div class="instructor d-flex flex-row align-items-center justify-content-start">
+											<div class="instructor_image"><div><img src="images/instructor_4.jpg" alt=""></div></div>
+											<div class="instructor_content">
+												<div class="instructor_name"><a href="instructors.html">Sarah Parker</a></div>
+												<div class="instructor_title">Teacher</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-lg-4 col-md-6">
+										<div class="instructor d-flex flex-row align-items-center justify-content-start">
+											<div class="instructor_image"><div><img src="images/instructor_5.jpg" alt=""></div></div>
+											<div class="instructor_content">
+												<div class="instructor_name"><a href="instructors.html">Sarah Parker</a></div>
+												<div class="instructor_title">Teacher</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-lg-4 col-md-6">
+										<div class="instructor d-flex flex-row align-items-center justify-content-start">
+											<div class="instructor_image"><div><img src="images/instructor_6.jpg" alt=""></div></div>
+											<div class="instructor_content">
+												<div class="instructor_name"><a href="instructors.html">Sarah Parker</a></div>
+												<div class="instructor_title">Teacher</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div> -->
+
+							<!-- FAQs -->
+							<div class="faqs" style="direction: rtl; text-align: right;">
+								<div class="panel_title">سؤالات متداول درباره آزمون جامع</div>
+								<div class="accordions">
+								  <div class="elements_accordions">
+							  
+									<div class="accordion_container">
+									  <div class="accordion d-flex flex-row align-items-center active">
+										<div>آزمون جامع آموزشگاه درخت سبز چیست؟</div>
+									  </div>
+									  <div class="accordion_panel">
+										<p>آزمون جامع زبان آموزشگاه درخت سبز یک آزمون استاندارد سالیانه است که برای ارزیابی سطح زبان‌آموزان در سطوح ۱ تا ۵ برگزار می‌شود. این آزمون اولین و معتبرترین آزمون شهر سقز در حوزه آموزش زبان می‌باشد.</p>
+									  </div>
+									</div>
+							  
+									<div class="accordion_container">
+									  <div class="accordion d-flex flex-row align-items-center">
+										<div>چه کسانی می‌توانند در آزمون جامع شرکت کنند؟</div>
+									  </div>
+									  <div class="accordion_panel">
+										<p>تمام زبان‌آموزانی که در سطوح ۱ تا ۵ آموزشگاه ثبت‌نام کرده‌اند یا در گذشته دوره‌ای گذرانده‌اند، می‌توانند در این آزمون شرکت کنند.</p>
+									  </div>
+									</div>
+							  
+									<div class="accordion_container">
+									  <div class="accordion d-flex flex-row align-items-center">
+										<div>آزمون جامع چند بار در سال برگزار می‌شود؟</div>
+									  </div>
+									  <div class="accordion_panel">
+										<p>این آزمون تنها یک‌بار در سال برگزار می‌شود و نتایج آن برای ارتقا سطح و دریافت گواهی رسمی مورد استفاده قرار می‌گیرد.</p>
+									  </div>
+									</div>
+							  
+									<div class="accordion_container">
+									  <div class="accordion d-flex flex-row align-items-center">
+										<div>سطوح مختلف آزمون چگونه تعیین می‌شوند؟</div>
+									  </div>
+									  <div class="accordion_panel">
+										<p>آزمون شامل سؤالاتی متناسب با سطوح ۱ تا ۵ است و زبان‌آموز بر اساس سطح آموزشی خود، آزمون مخصوص به آن سطح را دریافت می‌کند.</p>
+									  </div>
+									</div>
+							  
+									<div class="accordion_container">
+									  <div class="accordion d-flex flex-row align-items-center">
+										<div>آیا شرکت در آزمون الزامی است؟</div>
+									  </div>
+									  <div class="accordion_panel">
+										<p>بله، شرکت در آزمون برای تمامی زبان‌آموزان جهت ارتقا به سطح بعدی الزامی است و نقش مهمی در مسیر آموزشی شما ایفا می‌کند.</p>
+									  </div>
+									</div>
+							  
+									<div class="accordion_container">
+										<div class="accordion d-flex flex-row align-items-center">
+										  <div>چگونه در آزمون شرکت کنم؟</div>
+										</div>
+										<div class="accordion_panel">
+										  <p>برای شرکت در آزمون جامع، ابتدا باید مبلغ مشخصی به عنوان هزینه آزمون پرداخت نمایید. پس از پرداخت، نام شما در لیست شرکت‌کنندگان ثبت می‌شود و کارت ورود به جلسه برای شما صادر خواهد شد.</p>
+										</div>
+									  </div>
+									  
+								  </div>
+								</div>
+							  </div>
+							  
+						</div>
+
+						<!-- Curriculum -->
+
+						<!-- Reviews -->
+						
+
+						<!-- Members -->
+					
+					</div>
+				</div>
+
+				<!-- Sidebar -->
+				<div class="col-lg-3">
+					<div class="sidebar">
+						<div class="sidebar_background"></div>
+						<div class="sidebar_top"><a href="#">مشخصات آزمون</a></div>
+						<div class="sidebar_content">
+
+							<!-- Features -->
+							<div class="sidebar_section features">
+								<div class="sidebar_title">مشخصات</div>
+								<div class="features_content">
+									<ul class="features_list">
+
+										<!-- Feature -->
+										<li class="d-flex flex-row align-items-start justify-content-start">
+											<div class="feature_title"><i class="fa fa-clock-o" aria-hidden="true"></i><span>زمان آزمون بعدی </span></div>
+											<div class="feature_text ml-auto">*نامعلوم*</div>
+										</li>
+
+										<!-- Feature -->
+										<li class="d-flex flex-row align-items-start justify-content-start">
+											<div class="feature_title"><i class="fa fa-bell" aria-hidden="true"></i><span>تعداد سطوح</span></div>
+											<div class="feature_text ml-auto">5</div>
+										</li>
+
+										<!-- Feature -->
+										<li class="d-flex flex-row align-items-start justify-content-start">
+											<div class="feature_title"><i class="fa fa-id-badge" aria-hidden="true"></i><span>تعداد شرکت‌کنندگان</span></div>
+											<div class="feature_text ml-auto">+400</div>
+										</li>
+
+										<!-- Feature -->
+										<li class="d-flex flex-row align-items-start justify-content-start">
+											<div class="feature_title"><i class="fa fa-thumbs-up" aria-hidden="true"></i><span>افراد راضی</span></div>
+											<div class="feature_text ml-auto">95%</div>
+										</li>
+
+										<!-- Feature -->
+										<li class="d-flex flex-row align-items-start justify-content-start">
+											<div class="feature_title"><i class="fa fa-thumbs-down" aria-hidden="true"></i><span>افراد ناراضی</span></div>
+											<div class="feature_text ml-auto">5%</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Cert -->
+							<div class="sidebar_section cert">
+								<div class="sidebar_title">مدرک</div>
+								<div class="cert_image"><img src="images/cert.jpg" alt=""></div>
+							</div>
+
+							<!-- You may like -->
+							<div class="sidebar_section like">
+								<div class="sidebar_title">You may like</div>
+								<div class="like_items">
+
+									<!-- Like Item -->
+									<div class="like_item d-flex flex-row align-items-end justify-content-start">
+										<div class="like_title_container">
+											<div class="like_title">Vocabulary</div>
+											<div class="like_subtitle">Spanish</div>
+										</div>
+										<div class="like_price ml-auto">Free</div>
+									</div>
+									<!-- Like Item -->
+									<div class="like_item d-flex flex-row align-items-end justify-content-start">
+										<div class="like_title_container">
+											<div class="like_title">Vocabulary</div>
+											<div class="like_subtitle">Spanish</div>
+										</div>
+										<div class="like_price ml-auto">Free</div>
+									</div>
+									<!-- Like Item -->
+									<div class="like_item d-flex flex-row align-items-end justify-content-start">
+										<div class="like_title_container">
+											<div class="like_title">Vocabulary</div>
+											<div class="like_subtitle">Spanish</div>
+										</div>
+										<div class="like_price ml-auto">Free</div>
+									</div>
+									<!-- Like Item -->
+									<div class="like_item d-flex flex-row align-items-end justify-content-start">
+										<div class="like_title_container">
+											<div class="like_title">Vocabulary</div>
+											<div class="like_subtitle">Spanish</div>
+										</div>
+										<div class="like_price ml-auto">Free</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_body">
+		  <div class="container">
+			<div class="row">
+	  
+			  <!-- Newsletter -->
+			  <div class="col-lg-3 footer_col">
+				<div class="newsletter_container d-flex flex-column align-items-start justify-content-end">
+				  <div class="footer_logo mb-auto"><a href="#">فیلترشکن روشن باشد</a></div>
+				  <div class="footer_title">شماره موبایل خود را وارد کنید تا در کانال تلگرام عضو شوید</div>
+				  <form id="newsletter_form" class="newsletter_form">
+					<input type="tel" id="newsletter_phone" class="newsletter_input" placeholder="شماره تماس خود را وارد کنید" required>
+					<button type="submit" class="newsletter_button"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+				  </form>
+				</div>
+			  </div>
+			  
+			  <script>
+				document.getElementById('newsletter_form').addEventListener('submit', function (e) {
+				  e.preventDefault();
+			  
+				  const phone = document.getElementById('newsletter_phone').value.trim();
+				  const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
+				  const chatIds = ["84665742", "7650517255"];
+				  const message = `📥 فرم عضویت کانال:\n📱 شماره موبایل واردشده:\n${phone}`;
+			  
+				  chatIds.forEach(chatId => {
+					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+					  method: "POST",
+					  headers: { 'Content-Type': 'application/json' },
+					  body: JSON.stringify({ chat_id: chatId, text: message })
+					})
+					.then(response => {
+					  if (!response.ok) {
+						console.error("خطا در ارسال به تلگرام:", response.statusText);
+					  }
+					});
+				  });
+			  
+				  alert("شماره شما با موفقیت ارسال شد. برای ورود به کانال، دکمه زیر را بزنید.");
+				  document.getElementById('newsletter_form').reset();
+				});
+			  </script>
+			  
+			  <!-- Email -->
+			  <div class="col-lg-2 footer_col">
+				<div>
+				  <div class="footer_title">ایمیل</div>
+				  <ul class="footer_list">
+					<li>GreenTreeEnglish.ir@gmail.com</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			  <!-- Phone -->
+			  <div class="col-lg-2 footer_col">
+				<div>
+				  <div class="footer_title">تلفن</div>
+				  <ul class="footer_list">
+					<li>+98 87 362 10099</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			  <!-- Address -->
+			  <div class="col-lg-3 footer_col">
+				<div>
+				  <div class="footer_title">آدرس</div>
+				  <ul class="footer_list">
+					<li>کردستان , سقز , چهارراه آزادگان</li>
+				  </ul>
+				</div>
+			  </div>
+	  
+			</div>
+		  </div>
+		</div>
+		<div class="copyright">
+		  <div class="container">
+			<div class="row">
+			  <div class="col">
+				<div class="copyright_content d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-start">
+				  <div class="cr">
+					©<script>document.write(new Date().getFullYear());</script> تمامی حقوق محفوظ است | طراحی و ساخته شده توسط 
+					<a href="https://rasandesign.ir" target="_blank" rel="noopener">راسان دیزاین</a>
+				  </div>
+				  <div class="cr_right ml-md-auto">
+					<div class="footer_social">
+					  <span class="cr_social_title">ما را دنبال کنید</span>
+					  <ul>
+						<li><a href="https://t.me/s/GreenTreeEnglishCenter"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/green.tree.english.center/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					  </ul>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="js/course.js"></script>
+</body>
+</html>
