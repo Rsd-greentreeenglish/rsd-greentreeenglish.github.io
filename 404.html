@@ -1,0 +1,90 @@
+<html  lang="fa">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>coming soon!</title>
+	<!-- font-awesome -->
+	<link href="https://rsd-greentreeenglish.github.io/back/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Style CSS -->
+	<link href="https://rsd-greentreeenglish.github.io/back/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  	<section class="wraper">
+  		<header class="header">
+  			<h1>greentree</h1>
+  			<h2>بهترین صفحه ایی که شما به دنبال آن هستید.</h2>
+  		</header>
+  		<!-- .header -->
+  		<section class="countdown-wrapper">
+  			<ul id="back-countdiown">
+  				<li>                    
+  					<span class="seconds">00</span>
+  					<p class="fnt">ثانیه</p>
+  				</li>
+  				<li>
+  					<span class="minutes">00</span>
+  					<p class="fnt">دقیقه </p>
+  				</li>
+  				<li>
+  					<span class="hours">00</span>
+  					<p class="fnt">ساعت</p>
+  				</li>
+  				<li>
+  					<span class="days">00</span>
+  					<p class="fnt">روز</p>
+  				</li>               
+  			</ul><!-- #back-countdiown -->
+  		</section><!-- .countdown-wrapper -->
+  		<section class="subscribe">
+  			<form class="subscribe-form" role="form" method="">
+  				<h1>به زودی بر میگردیم</h1>
+  			</form>
+  		</section><!-- .subscribe-->
+
+  		<footer class="footer">
+  			<ul class="copyright">
+  				<li dir="ltr">&copy; Proximity. All rights reserved.</li>
+  				<li>Design By: <a href="https://rasandesign.ir">rasandesign</a></li>
+			  </ul>
+			  <ul class="copyright">
+				<li dir="ltr">&copy; کلیه حقوق محفوظ است</li>
+				<li>طراحی و ساخته شده توسط <a href="https://rasandesign.ir">راسان دیزاین </a></li>
+			</ul>
+  		</footer>
+  	</section>
+  	<div class="fullscreen-bg">
+  		<video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+  			<source src="img/video-bg.mp4" type="video/mp4">
+  		</video>
+  	</div> <!-- .fullscreen-bg -->
+  	<!-- Script -->
+	  <script>
+		// تاریخ پایان شمارش
+		var countDownDate = new Date("june 5, 2025 22:00:00").getTime();
+	  
+		var x = setInterval(function () {
+		  var now = new Date().getTime();
+		  var distance = countDownDate - now;
+	  
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("back-countdiown").innerHTML = "<li>زمان به پایان رسید لطفا کمی صبر کنید</li>";
+			return;
+		  }
+	  
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	  
+		  document.querySelector(".days").innerHTML = String(days).padStart(2, '0');
+		  document.querySelector(".hours").innerHTML = String(hours).padStart(2, '0');
+		  document.querySelector(".minutes").innerHTML = String(minutes).padStart(2, '0');
+		  document.querySelector(".seconds").innerHTML = String(seconds).padStart(2, '0');
+	  
+		}, 1000);
+	  </script>
+	  
+  	</body><!-- This template has been downloaded from Webrubik.com -->
+</html>
