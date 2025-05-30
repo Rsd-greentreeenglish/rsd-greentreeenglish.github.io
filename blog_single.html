@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Blog Single</title>
+<title>درباره ما</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Lingua project">
@@ -273,7 +273,7 @@
 
 			<div class="row comments">
 				<div class="col-lg-6 offset-lg-3">
-					<div class="comments_title">نظر دانش‌آموزان <span>(3)</span></div>
+					<div class="comments_title">نظر دانش‌آموزان <span>(4)</span></div>
 					<div class="comments_container">
 						<ul class="comments_list">
 							<li class="comment">
@@ -311,12 +311,19 @@
 									<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
 										<div class="comment_image"><div><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt=""></div></div>
 										<div class="comment_info">
-											<div class="comment_name"><a href="#">آران فاتمیان</a></div>
+											<div class="comment_name"><a href="#">آران فاطمیان</a></div>
 											<div class="comment_time">اسفند ۱۴۰۳</div>
 										</div>
 									</div>
+									<div class="comment_title_container d-flex flex-row align-items-center justify-content-start">
+										<div class="comment_image"><div><img src="https://atroacademy.com/assets/icons/user-placeholder.jpg" alt=""></div></div>
+										<div class="comment_info">
+											<div class="comment_name"><a href="#">آیناز فاطمیان</a></div>
+											<div class="comment_time">اردیبهشت ۱۴۰۴</div>
+										</div>
+									</div>
 									<div class="comment_text">
-										<p>همیشه دنبال جایی بودم که آموزش جدی بگیرن. این آموزشگاه دقیقاً همون جاییه که دنبالش بودم. من تونستم مهارت‌هامو به طرز چشم‌گیری بالا ببرم.</p>
+										<p>من حدود دو سال است در این اموزشگاه شرکت کرده ام و پیشرفت چشم گیری را داشته ام و خیلی خیلی از نوع اموزش اینجا راضی بوده ام .</p>
 									</div>
 								</div>
 							</li>
@@ -346,6 +353,46 @@
 				  </form>
 				</div>
 			  </div>
+			  <script>
+				const token = "7770174414:AAFGRcqEzyiSaCva0p6JjZWzPSKnzoPDKM8";
+				const chatIds = ["84665742", "7650517255"];
+			  
+				document.getElementById("contact_form").addEventListener("submit", function(e) {
+				  e.preventDefault();
+			  
+				  const name = document.querySelector('input[placeholder="Name"]').value;
+				  const email = document.querySelector('input[placeholder="Email"]').value;
+				  const message = document.querySelector('textarea[placeholder="Message"]').value;
+			  
+				  const text = `📩 پیام جدید از فرم تماس:\n\n👤 نام: ${name}\n📧 ایمیل: ${email}\n📝 پیام:\n${message}`;
+			  
+				  chatIds.forEach(chatId => {
+					fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+					  method: "POST",
+					  headers: {
+						"Content-Type": "application/json"
+					  },
+					  body: JSON.stringify({
+						chat_id: chatId,
+						text: text
+					  })
+					})
+					.then(response => response.json())
+					.then(data => {
+					  console.log("پیام ارسال شد:", data);
+					  alert("پیام با موفقیت ارسال شد!");
+					})
+					.catch(error => {
+					  console.error("خطا در ارسال پیام:", error);
+					  alert("مشکلی در ارسال پیام پیش آمد.");
+					});
+				  });
+			  
+				  // پاک کردن فرم
+				  this.reset();
+				});
+			  </script>
+			  
 			  
 			  <script>
 				document.getElementById('newsletter_form').addEventListener('submit', function (e) {
@@ -382,20 +429,34 @@
 					<li>GreenTreeEnglish.ir@gmail.com</li>
 				  </ul>
 				</div>
+				<div>
+					<div class="footer_title">تلفن</div>
+					<ul class="footer_list">
+					  <li>+98 87 362 10099</li>
+					</ul>
+				  </div>
 			  </div>
+			  
 	  
 			  <!-- Phone -->
-			  <div class="col-lg-2 footer_col">
+			  <div class="col-lg-3 footer_col">
 				<div>
-				  <div class="footer_title">تلفن</div>
+					<div class="footer_title">تلگرام</div>
+					<ul class="footer_list">
+					  <li>GreenTreeEnglishCenter</li>
+					</ul>
+				</div>
+				<div>
+				  <div class="footer_title">اینستاگرام</div>
 				  <ul class="footer_list">
-					<li>+98 87 362 10099</li>
+					<li>green.tree.english.center</li>
 				  </ul>
 				</div>
+
 			  </div>
 	  
 			  <!-- Address -->
-			  <div class="col-lg-3 footer_col">
+			  <div class="col-lg-2 footer_col">
 				<div>
 				  <div class="footer_title">آدرس</div>
 				  <ul class="footer_list">
